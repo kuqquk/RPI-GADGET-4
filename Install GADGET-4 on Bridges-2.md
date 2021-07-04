@@ -236,7 +236,7 @@ Inside `/gadget4/examples/CollidingGalaxiesSFR`, copy `Config.sh` to `/gadget4`,
 make
 ```
 
-if there's no error and an executable file `Gadget4` appeared in `/gadget4` after `make` then ***you are ready to rock***! 🤘
+if there's no error and an executable file `Gadget4` appears in `/gadget4` after `make` then ***you are ready to rock***! 🤘
 
 
 
