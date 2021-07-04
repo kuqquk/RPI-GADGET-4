@@ -21,10 +21,10 @@ https://www.psc.edu/resources/bridges-2/user-guide-2/
 ## `module` command
 
 ``` bash
-module list					   # show all loaded modules
-module load <module_name>		# load module <module_name>
+module list					         # show all loaded modules
+module load <module_name>		   # load module <module_name>
 module spider <module_name>		# list all possible version of <module_name>
-module show <module_name>		# show the path of <module_name>
+module show <module_name>		   # show the path of <module_name>
 ```
 
 
@@ -113,9 +113,9 @@ For they other required modules, we just load the modules in bridges2:
 ``` bash
 # module
 module load intelmpi/20.4-intel20.4		# mpi
-module load fftw/3.3.8				   # fftw3
+module load fftw/3.3.8				      # fftw3
 module load hdf5/1.12.0-intel20.4		# hdf5 
-module load anaconda3/2020.11		    # anaconda3 for python3, this is optional
+module load anaconda3/2020.11		      # anaconda3 for python3, this is optional
 ```
 
 You should put above lines into the `~/.bashrc` file, and do `source ~/.bashrc`. After that, these modules will be automatically loaded each time you log in bridges2.
@@ -198,13 +198,13 @@ Inside `Makefile`
    ```makefile
    ifeq ($(SYSTYPE),"Bridges2")
    # compliers
-   CC       =  mpicc   -std=c11  # sets the C-compiler
-   CPP      =  mpicxx  -std=c++11 # sets the C++-compiler
+   CC       =  mpicc   -std=c11      # sets the C-compiler
+   CPP      =  mpicxx  -std=c++11    # sets the C++-compiler
    OPTIMIZE =  -ggdb -O3 -march=native  -Wall -Wno-format-security
    
    # the paths of libraries from step2
    GSL_INCL   = -I/jet/home/xli233/usr/gsl-2.7/include		# change this to your direcotries
-   GSL_LIBS   = -L/jet/home/xli233/usr/gsl-2.7/lib		    # change this to your direcotries
+   GSL_LIBS   = -L/jet/home/xli233/usr/gsl-2.7/lib		      # change this to your direcotries
    
    FFTW_INCL  = -I/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/fftw-3.3.8-bx5uvjft5olrdheauq2yqu3z5yhkmlj2/include
    FFTW_LIBS  = -L/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/fftw-3.3.8-bx5uvjft5olrdheauq2yqu3z5yhkmlj2/lib
