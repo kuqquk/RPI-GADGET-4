@@ -21,10 +21,10 @@ https://www.psc.edu/resources/bridges-2/user-guide-2/
 ## `module` command
 
 ``` bash
-module list					         # show all loaded modules
-module load <module_name>		   # load module <module_name>
-module spider <module_name>		# list all possible version of <module_name>
-module show <module_name>		   # show the path of <module_name>
+module list                      # show all loaded modules
+module load <module_name>        # load module <module_name>
+module spider <module_name>      # list all possible version of <module_name>
+module show <module_name>        # show the path of <module_name>
 ```
 
 
@@ -203,8 +203,8 @@ Inside `Makefile`
    OPTIMIZE =  -ggdb -O3 -march=native  -Wall -Wno-format-security
    
    # the paths of libraries from step2
-   GSL_INCL   = -I/jet/home/xli233/usr/gsl-2.7/include		# change this to your direcotries
-   GSL_LIBS   = -L/jet/home/xli233/usr/gsl-2.7/lib		      # change this to your direcotries
+   GSL_INCL   = -I/jet/home/xli233/usr/gsl-2.7/include      # change this to your direcotries
+   GSL_LIBS   = -L/jet/home/xli233/usr/gsl-2.7/             # change this to your direcotries
    
    FFTW_INCL  = -I/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/fftw-3.3.8-bx5uvjft5olrdheauq2yqu3z5yhkmlj2/include
    FFTW_LIBS  = -L/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/fftw-3.3.8-bx5uvjft5olrdheauq2yqu3z5yhkmlj2/lib
