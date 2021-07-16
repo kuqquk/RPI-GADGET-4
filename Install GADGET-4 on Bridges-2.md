@@ -108,7 +108,7 @@ Fortunately, the last one is included in GADGET-4 directory inside `/gadget4/src
 
 ###  2.3 Load other dependencies 
 
-For they other required modules, we just load the modules in bridges2:
+For the other required modules, we just load the modules in bridges2:
 
 ``` bash
 # module
@@ -222,7 +222,7 @@ Inside `Makefile`
 
    `GSL_INCL` and `GSL_LIBS` are `include` and `lib` directories inside where you installed gsl (the path after `--prefix=` in step 2.2). You should change this to your own path.
 
-   All other libraries path I found in bridges2 should be valid for you too, just copy and past to your `Makefile`
+   All other libraries path I found in bridges2 should be valid for you too, just copy and paste to your `Makefile`
 
 
 
